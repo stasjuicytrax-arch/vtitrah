@@ -1,0 +1,20 @@
+node_modules
+dist
+.DS_Store
+*.local
+
+# служебный кэш impeccable (локальное состояние сессии)
+.impeccable/hook.cache.json
+
+# скриншоты и логи визуальной проверки Playwright
+.playwright-mcp/
+
+# заявки и секреты обработчика — не в репозиторий
+server/.env
+server/data/
+
+# исходники картинок, которые присылает заказчик (в сборке нужны только сжатые из assets/)
+123.png
+15-DSC01195.jpg
+newfon.jpg
+10-DSC01249.jpg

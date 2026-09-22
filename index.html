@@ -1,0 +1,955 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>В титрах — свадебное агентство</title>
+  <meta name="description" content="Ваша любовь в главной роли. Мы — в титрах. Свадебное агентство «В титрах», Пермь.">
+
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231B0100'/%3E%3Cg stroke='%23EB0F03' stroke-width='3.4' stroke-linecap='round'%3E%3Cpath d='M16 6v20M7.3 11l17.4 10M7.3 21l17.4-10'/%3E%3C/g%3E%3C/svg%3E">
+
+  <link rel="stylesheet" href="css/fonts.css">
+  <link rel="stylesheet" href="css/tokens.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/sections.css">
+</head>
+<body>
+
+  <a class="skip-link" href="#top">Перейти к содержанию</a>
+
+  <!-- Линейка-таймкод (реф. 1) -->
+  <div class="timecode" id="timecode" aria-hidden="true">
+    <div class="timecode__ruler"><span class="timecode__progress" id="timecodeProgress"></span></div>
+    <span class="timecode__value" id="timecodeValue">00:00:00:00</span>
+  </div>
+
+  <!-- 00. Шапка / навигация -->
+  <header class="nav" id="nav">
+    <div class="nav__pill">
+      <a class="nav__logo" href="#top" aria-label="В титрах — на главную">
+        <img src="assets/sections/01-hero/02-photo.png" alt="" width="1000" height="340">
+      </a>
+
+      <nav class="nav__menu" aria-label="Главное меню">
+        <ul>
+          <li><a href="#top">главная</a></li>
+          <li><a href="#about">О НАС</a></li>
+          <li><a href="#portfolio">портфолио</a></li>
+          <li><a href="#stages">услуги</a></li>
+          <li><a href="#price">стоимость</a></li>
+          <li><a href="#contacts">контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav__side">
+        <a class="nav__icon" href="https://t.me/stastoropov" target="_blank" rel="noopener" title="Телеграм" aria-label="Телеграм">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+            <path d="M21 4.5 2.8 11.4l5.1 1.7L19 6.4l-8.4 8.2.3 5 2.7-3.5 4.6 3.4z" class="is-filled"></path>
+          </svg>
+        </a>
+      </div>
+
+      <a class="cta cta--sm nav__cta" href="#" data-popup="write"><span class="cta__label">Написать нам</span><span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></a>
+
+      <button class="nav__burger" id="navBurger" aria-label="Открыть меню" aria-expanded="false" aria-controls="navCurtain">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Мобильное меню — тёмный «занавес» -->
+  <div class="curtain" id="navCurtain" role="dialog" aria-modal="true" aria-label="Меню" hidden>
+    <nav class="curtain__inner">
+      <ul class="curtain__menu">
+        <li><a href="#top">главная</a></li>
+        <li><a href="#about">О НАС</a></li>
+        <li><a href="#portfolio">портфолио</a></li>
+        <li><a href="#stages">услуги</a></li>
+        <li><a href="#price">стоимость</a></li>
+        <li><a href="#contacts">контакты</a></li>
+      </ul>
+      <ul class="curtain__links">
+        <li><a href="#" data-popup="write">Написать нам</a></li>
+        <li><a href="#" data-download="presentation">Скачать презентацию</a></li>
+        <li><a href="#reviews">благодарности</a></li>
+      </ul>
+      <div class="curtain__social">
+        <a href="https://t.me/stastoropov" target="_blank" rel="noopener">Телеграм</a>
+      </div>
+    </nav>
+  </div>
+
+  <main>
+
+    <!-- 01. Hero -->
+    <section id="top" class="hero">
+      <div class="hero__screen panel-cut panel-cut--plain">
+        <div class="hero__stage" id="heroStage">
+          <img class="hero__bg" src="assets/sections/01-hero/05-hero-1920.jpg"
+               srcset="assets/sections/01-hero/05-hero-1280.jpg 1280w, assets/sections/01-hero/05-hero-1920.jpg 1920w, assets/sections/01-hero/05-hero-2560.jpg 2560w"
+               sizes="100vw" fetchpriority="high"
+               alt="Жених склоняет невесту в танце на фоне красного бархатного занавеса с люстрами и композициями из роз" width="1920" height="1080">
+          <div class="hero__veil"></div>
+
+          <h1 class="hero__center">
+            <img class="hero__logo" src="assets/sections/01-hero/02-photo.png"
+                 alt="В титрах" width="1000" height="340">
+            <span class="hero__eyebrow">Свадебное агентство</span>
+            <span class="hero__slogan">Ваша любовь в главной роли. Мы — в титрах</span>
+          </h1>
+
+          <div class="hero__cards">
+            <div class="hero__card">
+              <span class="hero__card-label">Срок</span>
+              <p>Работаем за&nbsp;6&nbsp;месяцев до&nbsp;премьеры</p>
+            </div>
+            <div class="hero__card">
+              <span class="hero__card-label">Подход</span>
+              <p>Организуем истории, которые хочется пересматривать</p>
+            </div>
+          </div>
+
+          <a class="hero__scroll" href="#agency-title" aria-label="К следующему блоку">
+            <svg viewBox="0 0 12 56" aria-hidden="true" focusable="false">
+              <line x1="6" y1="0" x2="6" y2="46"></line>
+              <polyline points="1.5,40 6,48 10.5,40"></polyline>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- 02–03. Лента-киноплёнка и фото-ряды — один модуль -->
+    <section class="reel">
+      <div class="marquee" aria-hidden="true">
+        <div class="marquee__track">
+        <span class="marquee__item">Ваша любовь в главной роли. Мы - в титрах</span>
+        <span class="marquee__sep"><svg class="asterisk asterisk--sm" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/></svg><span class="marquee__tc">00:04:12:08</span></span>
+        <span class="marquee__item">Ваша любовь в главной роли. Мы - в титрах</span>
+        <span class="marquee__sep"><svg class="asterisk asterisk--sm" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/></svg><span class="marquee__tc">00:17:36:21</span></span>
+        <span class="marquee__item">Ваша любовь в главной роли. Мы - в титрах</span>
+        <span class="marquee__sep"><svg class="asterisk asterisk--sm" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/></svg><span class="marquee__tc">00:42:08:02</span></span>
+        <span class="marquee__item">Ваша любовь в главной роли. Мы - в титрах</span>
+        <span class="marquee__sep"><svg class="asterisk asterisk--sm" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/></svg><span class="marquee__tc">01:05:51:14</span></span>
+        </div>
+      </div>
+
+      <!-- 03. Фото-лента №1 — две строки навстречу -->
+      <div id="photo-strip-1" class="strip" role="group" aria-label="Кадры со свадеб">
+        <div class="strip__row" data-strip-dir="-1">
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/01-DSC04470.jpg" alt="" loading="lazy" width="1680" height="1120"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/02-5876a3333e7efd881fb4.jpg" alt="" loading="lazy" width="1202" height="1503"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/03-AJ-73.jpg" alt="" loading="lazy" width="1680" height="2525"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/04-DSC00373.jpg" alt="" loading="lazy" width="1680" height="2520"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/05-DSC04775.jpg" alt="" loading="lazy" width="1680" height="2519"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/06-DSC05669.jpg" alt="" loading="lazy" width="1680" height="2519"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/07-DSC06583.jpg" alt="" loading="lazy" width="1680" height="1120"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/08-DSC09664.jpg" alt="" loading="lazy" width="1680" height="2520"></figure>
+        </div>
+        <div class="strip__row" data-strip-dir="1">
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/05-DSC04775.jpg" alt="" loading="lazy" width="1680" height="2519"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/06-DSC05669.jpg" alt="" loading="lazy" width="1680" height="2519"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/07-DSC06583.jpg" alt="" loading="lazy" width="1680" height="1120"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/08-DSC09664.jpg" alt="" loading="lazy" width="1680" height="2520"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/01-DSC04470.jpg" alt="" loading="lazy" width="1680" height="1120"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/02-5876a3333e7efd881fb4.jpg" alt="" loading="lazy" width="1202" height="1503"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/03-AJ-73.jpg" alt="" loading="lazy" width="1680" height="2525"></figure>
+          <figure class="strip__frame"><img src="assets/sections/02-photo-strip/04-DSC00373.jpg" alt="" loading="lazy" width="1680" height="2520"></figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- 04. Свадебное агентство «В титрах» -->
+    <section id="agency-title" class="section section--screen panel-cut wordmark">
+      <div class="container">
+        <p class="wordmark__eyebrow">
+          <span>Сценарий</span><i></i><span>Свадебное агентство</span><i></i><span>Финальные титры</span>
+        </p>
+
+        <div class="wordmark__row">
+          <span class="wordmark__side">Пермь · с 2016</span>
+          <h2 class="wordmark__big">«В ТИТРАХ»</h2>
+          <span class="wordmark__side wordmark__side--tc" aria-hidden="true">00:20:16:00</span>
+        </div>
+
+        <div class="wordmark__stagebox">
+          <dl class="wordmark__meta">
+            <dt>Формат</dt>
+            <dd>Полный продакшн</dd>
+          </dl>
+          <figure class="wordmark__stage">
+            <img class="wordmark__photo" src="assets/sections/03-agency-title/02-2d505dd9f9243c668e48.jpg"
+                 alt="Пара танцует на сцене у красного бархатного занавеса, кадр в рамке киноплёнки" loading="lazy" width="1024" height="768">
+          </figure>
+          <dl class="wordmark__meta wordmark__meta--right">
+            <dt>Город</dt>
+            <dd>Любой</dd>
+          </dl>
+        </div>
+
+        <p class="wordmark__lead">Организуем истории, которые хочется пересматривать</p>
+      </div>
+    </section>
+
+    <!-- 05. О нас — Особый фильм -->
+    <section id="about" class="section section--screen panel-cut film">
+      <div class="container">
+        <div class="film__head">
+          <svg class="asterisk" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/></svg>
+          <h2 class="film__title">
+            <span class="film__line">Для нас каждая пара&nbsp;—</span>
+            <span class="film__line film__line--mute">это совершенно</span>
+            <span class="film__line film__line--shift">особый <span class="film__pill"><img src="assets/galleries/01-damir-nadezhda/10-DSC01249.jpg" alt="" loading="lazy" width="1680" height="2520"></span> фильм</span>
+          </h2>
+        </div>
+
+        <div class="film__body">
+          <figure class="film__photo">
+            <img src="assets/sections/04-about-osobyi-film/03-9a12435b3e3eddc07090.jpg"
+                 alt="Чёрно-белый портрет жениха и невесты в рамке киноплёнки" loading="lazy" width="1024" height="1024">
+          </figure>
+
+          <p class="film__stat">
+            <span class="film__stat-num">6−9</span>
+            <span class="film__stat-label">месяцев до свадьбы — идеальный срок для подготовки</span>
+          </p>
+
+          <div class="film__text">
+            <p>У каждой пары свой сценарий - своя любовь, мы берём на себя всю техническую магию по созданию вашего фильма: локации, свет, звук, монтаж.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 06. Мы не ходим в кадре -->
+    <section id="behind-the-scenes" class="section backstage">
+      <div class="container">
+        <h2 class="backstage__title">Мы не ходим в кадре</h2>
+
+        <div class="backstage__grid">
+          <div class="backstage__copy">
+            <p class="backstage__text">Мы контролируем площадку, помогаем невесте, проверяем звук микрофона и шепотом просим расступиться, когда идёт невеста. Наши имена появятся в конце, но работать начинаем за 6 месяцев до премьеры</p>
+            <p class="backstage__quote">Создадим фильм, в котором оживет именно ваша история любви</p>
+          </div>
+
+          <div class="backstage__media">
+            <div class="fan">
+              <figure class="fan__card fan__card--left"><img src="assets/sections/05-behind-the-scenes/02-1230876b743acedfc33b.jpg" alt="Свадебное платье, расшитое стразами" loading="lazy" width="768" height="1024"></figure>
+              <figure class="fan__card fan__card--right"><img src="assets/sections/05-behind-the-scenes/03-fe88687e2a3f124b8d51.png" alt="Две девушки на свадьбе" loading="lazy" width="1086" height="1448"></figure>
+              <figure class="fan__card fan__card--center"><img src="assets/sections/05-behind-the-scenes/04-0c11e202b7398e684289.jpg" alt="Ведущая с микрофоном на свадьбе" loading="lazy" width="768" height="1024"></figure>
+            </div>
+
+            <ul class="stats">
+              <li class="stats__item"><span class="stats__num">6</span><span class="stats__label">месяцев до премьеры</span></li>
+              <li class="stats__item"><span class="stats__num">1</span><span class="stats__label">команда за кадром</span></li>
+              <li class="stats__item"><span class="stats__num">0</span><span class="stats__label">шаблонов</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Полоса-хронометраж между «не ходим в кадре» и формой -->
+    <div class="chrono" aria-hidden="true">
+      <div class="chrono__scale"><span class="chrono__fill"></span></div>
+      <div class="chrono__marks"><span>00:00:00</span><span>00:15:00</span><span>00:30:00</span><span>00:45:00</span><span>01:00:00</span><span>01:15:00</span><span>01:30:00</span></div>
+    </div>
+
+    <!-- 07. Форма заявки №1 — «билет» -->
+    <section id="form-1" class="section section--screen panel-cut request">
+      <div class="container">
+        <div class="ticket">
+          <div class="ticket__stub">
+            <figure class="ticket__photo">
+              <img src="assets/galleries/01-damir-nadezhda/11-DSC01724.jpg" alt="Жених и невеста машут руками на фоне красного бархатного занавеса" loading="lazy" width="1680" height="2520">
+            </figure>
+            <h2 class="ticket__title">Оставьте заявку</h2>
+            <p class="ticket__lead">и мы начнём подготовку к вашей премьере</p>
+          </div>
+
+          <!-- Бэкенда пока нет (docs/LEGAL.md §2.3): обработчик на российском хостинге подключится через action -->
+          <form class="ticket__form" id="ticketForm" action="send.php" method="post" novalidate>
+            <input type="hidden" name="consent_version" value="soglasie-v1-2026-09">
+            <input type="hidden" name="page" value="">
+            <input type="hidden" name="sent_at" value="">
+
+          <div class="ticket__field">
+            <label class="ticket__label" for="f-names">В главных ролях</label>
+            <input class="ticket__input" id="f-names" name="names" type="text" placeholder="Имя главных героев" autocomplete="name" required aria-describedby="e-names">
+            <p class="ticket__error" id="e-names" hidden></p>
+          </div>
+          <div class="ticket__field">
+            <label class="ticket__label" for="f-date">Дата премьеры</label>
+            <input class="ticket__input" id="f-date" name="date" type="date" required aria-describedby="e-date">
+            <p class="ticket__error" id="e-date" hidden></p>
+          </div>
+          <div class="ticket__field">
+            <label class="ticket__label" for="f-place">Локация</label>
+            <input class="ticket__input" id="f-place" name="place" type="text" placeholder="Локация съёмки" required aria-describedby="e-place">
+            <p class="ticket__error" id="e-place" hidden></p>
+          </div>
+          <div class="ticket__field">
+            <label class="ticket__label" for="f-contact">Связь</label>
+            <input class="ticket__input" id="f-contact" name="contact" type="text" placeholder="Ваши контакты" autocomplete="tel" required aria-describedby="e-contact">
+            <p class="ticket__error" id="e-contact" hidden></p>
+          </div>
+
+            <label class="consent">
+              <input class="consent__box" type="checkbox" name="consent" id="f-consent" required>
+              <span>Я даю <a href="soglasie.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и ознакомлен(а) с <a href="politika.html" target="_blank" rel="noopener">политикой конфиденциальности</a></span>
+            </label>
+            <p class="consent__hint" id="consentHint">Отметьте согласие, чтобы отправить заявку</p>
+
+            <button type="submit" class="cta cta--lg ticket__submit" disabled aria-describedby="consentHint"><span class="cta__label">Отправить</span><span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></button>
+            <p class="ticket__fail" id="ticketFail" role="alert" hidden></p>
+          </form>
+
+          <div class="ticket__done" id="ticketDone" role="status" hidden>
+            <svg class="asterisk" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><path d="M16 3v26M4.7 9.5l22.6 13M4.7 22.5l22.6-13"/></svg>
+            <p class="ticket__done-text">Премьера назначена</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 08. Портфолио -->
+    <section id="portfolio" class="section section--screen panel-cut works">
+      <div class="container">
+        <h2 class="works__title">Портфолио</h2>
+        <ul class="works__grid">
+        <li class="works__item" style="--r: 0.750">
+          <a class="work" href="#nadezdadamir">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-01-damir-nadezhda.jpg" width="768" height="1024" alt="Дамир и Надежда, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 001</span>
+            <span class="work__names">ДАМИР И НАДЕЖДА</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 0.806">
+          <a class="work" href="#romandaria">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-02-roman-daria.jpg" width="1680" height="2085" alt="Роман и Дарья, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 002</span>
+            <span class="work__names">РОМАН И ДАРЬЯ</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 0.747">
+          <a class="work" href="#kseniasergey">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-03-sergey-ksenia.jpg" width="1680" height="2250" alt="Сергей и Ксения, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 003</span>
+            <span class="work__names">СЕРГЕЙ И КСЕНИЯ</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 0.747">
+          <a class="work" href="#evgiyalena">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-04-evgeny-alena.jpg" width="1680" height="2250" alt="Евгений и Алена, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 004</span>
+            <span class="work__names">ЕВГЕНИЙ И АЛЕНА</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 1.242">
+          <a class="work" href="#aleksandrasergey">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-05-sergey-aleksandra.jpg" width="1680" height="1353" alt="Сергей и Александра, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 005</span>
+            <span class="work__names">СЕРГЕЙ И АЛЕКСАНДРА</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 1.242">
+          <a class="work" href="#alekseyanna">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-06-aleksey-anna.jpg" width="1680" height="1353" alt="Алексей и Анна, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 006</span>
+            <span class="work__names">АЛЕКСЕЙ И АННА</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 1.242">
+          <a class="work" href="#antonyulia">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-07-anton-yulia.jpg" width="1680" height="1353" alt="Антон и Юля, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 007</span>
+            <span class="work__names">АНТОН И ЮЛЯ</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 0.806">
+          <a class="work" href="#dmitruyekaterina">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-08-dmitry-ekaterina.jpg" width="1680" height="2085" alt="Дмитрий и Екатерина, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 008</span>
+            <span class="work__names">ДМИТРИЙ И ЕКАТЕРИНА</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 1.340">
+          <a class="work" href="#pavelksenia">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-09-pavel-ksenia.jpg" width="1680" height="1254" alt="Павел и Ксения, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 009</span>
+            <span class="work__names">ПАВЕЛ И КСЕНИЯ</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        <li class="works__item" style="--r: 0.806">
+          <a class="work" href="#sergeymaria">
+            <img class="work__img" src="assets/sections/07-portfolio/cover-10-sergey-maria.jpg" width="1680" height="2085" alt="Сергей и Мария, свадебная съёмка" loading="lazy">
+            <span class="work__tag">КАДР 010</span>
+            <span class="work__names">СЕРГЕЙ И МАРИЯ</span>
+            <span class="work__more">Смотреть все фото <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></span>
+          </a>
+        </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 09. Почему истории получаются настоящими -->
+    <section id="why-real" class="section section--screen panel-cut why">
+      <div class="container">
+        <h2 class="why__title">
+          <span class="why__title-line">Почему истории получаются</span>
+          <span class="why__title-line why__title-mute">— настоящими?</span>
+        </h2>
+
+        <div class="why__inner">
+          <ol class="why__list">
+            <li class="why__item" data-why="0">
+              <span class="why__num">01</span>
+              <h3 class="why__name">Без шаблонного сценария</h3>
+              <p class="why__text">Никаких одинаковых свадеб и чужих референсов</p>
+              <figure class="why__inline">
+                <img src="assets/sections/08-why-real/03-ebd03c95b8981e56ac48.jpg" alt="Пара у теплохода на набережной" loading="lazy" width="1680" height="1254">
+              </figure>
+            </li>
+            <li class="why__item" data-why="1">
+              <span class="why__num">02</span>
+              <h3 class="why__name">Искренние эмоции</h3>
+              <p class="why__text">Только живые моменты и атмосфера, в которой комфортно быть собой</p>
+              <figure class="why__inline">
+                <img src="assets/sections/08-why-real/04-e3f0c070cd99dd210e89.jpg" alt="Жених и невеста обнимаются у красного занавеса" loading="lazy" width="1680" height="2085">
+              </figure>
+            </li>
+            <li class="why__item" data-why="2">
+              <span class="why__num">03</span>
+              <h3 class="why__name">Без ощущения «мероприятия»</h3>
+              <p class="why__text">Ваш день ощущается как история, а не как тайминг в банкетном зале</p>
+              <figure class="why__inline">
+                <img src="assets/sections/08-why-real/05-648c653ffd974bbb7655.jpg" alt="Девушка листает альбом в саду" loading="lazy" width="1680" height="1254">
+              </figure>
+            </li>
+            <li class="why__item" data-why="3">
+              <span class="why__num">04</span>
+              <h3 class="why__name">Без хаоса за кадром</h3>
+              <p class="why__text">Мы делаем так, чтобы вы не думали об организации в день свадьбы</p>
+              <figure class="why__inline">
+                <img src="assets/sections/08-why-real/02-05d06d152dcf6c3585cd.jpg" alt="Обручальные кольца на свадебном приглашении" loading="lazy" width="1680" height="1254">
+              </figure>
+            </li>
+          </ol>
+
+          <div class="why__media" aria-hidden="true">
+            <figure class="why__photo is-on" data-why-photo="0">
+              <img src="assets/sections/08-why-real/03-ebd03c95b8981e56ac48.jpg" alt="" loading="lazy">
+            </figure>
+            <figure class="why__photo" data-why-photo="1">
+              <img src="assets/sections/08-why-real/04-e3f0c070cd99dd210e89.jpg" alt="" loading="lazy">
+            </figure>
+            <figure class="why__photo" data-why-photo="2">
+              <img src="assets/sections/08-why-real/05-648c653ffd974bbb7655.jpg" alt="" loading="lazy">
+            </figure>
+            <figure class="why__photo" data-why-photo="3">
+              <img src="assets/sections/08-why-real/02-05d06d152dcf6c3585cd.jpg" alt="" loading="lazy">
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 10. Отзывы -->
+    <section id="reviews" class="section reviews">
+      <div class="container reviews__inner">
+        <div class="reviews__head">
+          <p class="reviews__kicker">Благодарности</p>
+          <h2 class="reviews__title">Отзывы</h2>
+        </div>
+
+        <div class="reviews__cols">
+          <div class="reviews__col" data-reviews-dir="-1">
+              <article class="review">
+                <p class="review__text">Наша свадьба прошла просто идеально! Агентство продумало всё до мелочей: от декора до тайминга. Мы вообще ни о чём не беспокоились. Спасибо огромное команде!</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ОБ</span>Ольга Беляева</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Работали с ними на свадьбе в Перми. Выбрали отличную площадку, которая идеально подошла под наш бюджет и стиль. Ведущий был огонь, гости до сих пор вспоминают! Рекомендую.</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">АО</span>Анна Отипова</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Если хотите свадьбу без головной боли — обращайтесь сюда. Всё прозрачно, без скрытых платежей. Мы остались очень довольны и уже рекомендуем друзьям</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ИА</span>Инна Астафьева</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Очень приятная команда. Чувствовалось, что они искренне хотят сделать твой день особенным. Не просто работа, а настоящее участие</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ГК</span>Галя Кузнецова</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Спасибо за тёплую, душевную атмосферу на нашей свадьбе. Не было ощущения «массового мероприятия», всё было очень по-домашнему и при этом стильно.</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ИК</span>Ирина Киселева</p>
+              </article>
+          </div>
+          <div class="reviews__col" data-reviews-dir="1">
+              <article class="review">
+                <p class="review__text">Очень профессиональное агентство. Всё было организовано чётко, без накладок. Особенно понравилось, как быстро реагировали на все наши пожелания, даже за неделю до свадьбы</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">КК</span>Катя Карипанова</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Спасибо, что сделали нашу мечту реальностью! Я плакала от счастья, когда увидела оформление зала. Всё было именно так, как я представляла, и даже лучше</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ЗС</span>Зоя Сулейманова</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Работали с агентством на выездной церемонии у озера. Декор, погода, эмоции — всё совпало. Координатор весь день была с нами и помогала в любой момент. 10/10!</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ИБ</span>Инна Балыбердина</p>
+              </article>
+              <article class="review">
+                <p class="review__text">Лучшее решение — доверить организацию свадьбы профессионалам. Мы отдыхали и наслаждались процессом подготовки, а не бегали в панике. Огромное спасибо!</p>
+                <p class="review__author"><span class="review__ini" aria-hidden="true">ГУ</span>Галя Ушакова</p>
+              </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 11. Этапы работы -->
+    <section id="stages" class="section section--screen panel-cut stages">
+      <div class="stages__pin">
+        <div class="container stages__head">
+          <h2 class="stages__title">Этапы работы</h2>
+          <div class="stages__progress" aria-hidden="true"><span class="stages__progress-fill"></span></div>
+        </div>
+
+        <div class="stages__viewport">
+          <ol class="stages__track">
+            <li class="scene">
+              <p class="scene__tag">Сцена 01 / 06</p>
+              <figure class="scene__photo"><img src="assets/sections/09-stages/03-47113d09528628c71d32.jpg" alt="Пара разбирает фотографии вместе с организатором" loading="lazy" width="1024" height="1024"></figure>
+              <h3 class="scene__name">Режиссерский бриф</h3>
+              <p class="scene__text">Мы знакомимся с вашей историей, привычками, эстетикой и тем, каким вы хотите запомнить этот день</p>
+            </li>
+            <li class="scene">
+              <p class="scene__tag">Сцена 02 / 06</p>
+              <figure class="scene__photo"><img src="assets/sections/09-stages/07-d82fb4e4c9334be61ee8.jpg" alt="Встреча с парой за столом, рядом камера" loading="lazy" width="1024" height="1024"></figure>
+              <h3 class="scene__name">Предпродакшн</h3>
+              <p class="scene__text">Знакомимся, обсуждаем историю любви, настроение и масштаб проекта</p>
+            </li>
+            <li class="scene">
+              <p class="scene__tag">Сцена 03 / 06</p>
+              <figure class="scene__photo"><img src="assets/sections/09-stages/04-b2fef2e301cfc38f34c4.jpg" alt="Подписание договора, рядом табличка Green light" loading="lazy" width="1024" height="1024"></figure>
+              <h3 class="scene__name">Зелёный свет</h3>
+              <p class="scene__text">Подписание договора, фиксируем все договоренности и официально запускаем ваш проект в продакшн</p>
+            </li>
+            <li class="scene">
+              <p class="scene__tag">Сцена 04 / 06</p>
+              <figure class="scene__photo"><img src="assets/sections/09-stages/06-b02b3bb0276966ac9e07.jpg" alt="Блокнот с раскадровкой свадебного дня" loading="lazy" width="1024" height="1024"></figure>
+              <h3 class="scene__name">Сценарий</h3>
+              <p class="scene__text">Собираем структуру дня, визуальную концепцию</p>
+            </li>
+            <li class="scene">
+              <p class="scene__tag">Сцена 05 / 06</p>
+              <figure class="scene__photo"><img src="assets/sections/09-stages/05-e84627add5ea91d15ffd.jpg" alt="Команда агентства обсуждает подрядчиков за столом" loading="lazy" width="1024" height="1024"></figure>
+              <h3 class="scene__name">Кастинг команды</h3>
+              <p class="scene__text">Подбираем площадку, подрядчиков и съёмочную группу</p>
+            </li>
+            <li class="scene scene--final">
+              <p class="scene__tag">Сцена 06 / 06</p>
+              <figure class="scene__photo"><img src="assets/sections/09-stages/09-47f5de9755fe84bd2eb0.jpg" alt="Съёмочная группа снимает пару на площадке" loading="lazy" width="1024" height="1024"></figure>
+              <h3 class="scene__name">Съёмочный день</h3>
+              <p class="scene__text">Полностью координируем свадьбу и держим всё за кадром</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 12. Стоимость -->
+    <section id="price" class="section price">
+      <div class="container">
+        <h2 class="price__title">Стоимость</h2>
+
+        <div class="price__cards">
+          <article class="plan plan--full panel-cut">
+            <img class="plan__bg" src="assets/sections/01-hero/03-DSC01163_1.jpg" alt="" loading="lazy" width="1680" height="1120">
+            <div class="plan__body">
+              <h3 class="plan__name">Полный продакшн</h3>
+              <p class="plan__desc">От идеи и сценария до финальных титров</p>
+              <p class="plan__price plan__price--glass">90.000 р</p>
+            </div>
+          </article>
+
+          <article class="plan plan--day panel-cut">
+            <figure class="plan__shot">
+              <img src="assets/galleries/05-sergey-aleksandra/01-DSC05720.jpg" alt="Обручальные кольца на свадебном букете" loading="lazy" width="1680" height="1120">
+            </figure>
+            <div class="plan__body">
+              <h3 class="plan__name">Продюсирование дня</h3>
+              <p class="plan__desc">Для пар, которые всё подготовили сами, но хотят прожить день спокойно.</p>
+              <ul class="plan__list">
+                <li>Контролируем площадку</li>
+                <li>Помогаем невесте</li>
+                <li>Проверяем звук микрофона</li>
+                <li>Держим всё за кадром</li>
+              </ul>
+              <p class="plan__price">от 25.000 р</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 13. Вопросы (FAQ) -->
+    <section id="faq" class="section section--screen panel-cut faq">
+      <div class="container faq__inner">
+        <div class="faq__aside">
+          <h2 class="faq__title">Вопросы</h2>
+          <p class="faq__lead">Которые вы могли бы задать</p>
+        </div>
+
+        <div class="faq__list">
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-1" id="faq-q-1">
+                <span class="faq__num">01</span>
+                <span class="faq__label">Сколько стоит организация свадьбы?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-1" role="region" aria-labelledby="faq-q-1">
+              <div class="faq__answer-inner">
+                <p>Цена зависит от формата, задач и наполнения. Мы всегда честно объясняем, из чего складывается бюджет, и предлагаем лучшее — в рамках ваших возможностей. После первого созвона и анкеты мы сможем назвать ориентиры и подобрать идеальный формат.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-2" id="faq-q-2">
+                <span class="faq__num">02</span>
+                <span class="faq__label">В чём разница между свадьбой в будний день и в выходной?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-2" role="region" aria-labelledby="faq-q-2">
+              <div class="faq__answer-inner">
+                <p>Свадьба в будний день — это отличная возможность сохранить желаемый уровень качества, при этом избежать ажиотажа.</p>
+                <p>В такие даты проще забронировать популярные площадки и подрядчиков, с которыми хочется работать в первую очередь. Часто это позволяет немного оптимизировать бюджет.</p>
+                <p>Что касается настроения и атмосферы — здесь всё в наших руках. Мы умеем создавать особенный день вне зависимости от дня недели: с теплом, эстетикой и вниманием к каждой детали.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-3" id="faq-q-3">
+                <span class="faq__num">03</span>
+                <span class="faq__label">Вы работаете по договору?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-3" role="region" aria-labelledby="faq-q-3">
+              <div class="faq__answer-inner">
+                <p>Обязательно. Это ваша гарантия спокойствия, а наша — ответственности. Всё официально, с прозрачными условиями.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-4" id="faq-q-4">
+                <span class="faq__num">04</span>
+                <span class="faq__label">За сколько месяцев лучше начинать подготовку?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-4" role="region" aria-labelledby="faq-q-4">
+              <div class="faq__answer-inner">
+                <p>Идеальный срок для подготовки — 6−9 месяцев до свадьбы. Но если до вашего дня осталось меньше времени, не переживайте — мы с радостью подстроимся под любые сроки. Главное — начать общение и обсудить, как лучше организовать процесс, а остальное мы возьмём на себя.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-5" id="faq-q-5">
+                <span class="faq__num">05</span>
+                <span class="faq__label">Вы будете на площадке в день свадьбы?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-5" role="region" aria-labelledby="faq-q-5">
+              <div class="faq__answer-inner">
+                <p>Мы приезжаем раньше всех — и уезжаем, когда последний вопрос решён. С самого утра мы на площадке: координируем, следим за монтажом, расстановкой, таймингом. Чтобы вы были в моменте, а не в заботах.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-6" id="faq-q-6">
+                <span class="faq__num">06</span>
+                <span class="faq__label">Вы организовываете свадьбы только в Перми?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-6" role="region" aria-labelledby="faq-q-6">
+              <div class="faq__answer-inner">
+                <p>Нет, мы рады организовать свадьбу в любом городе мира, расскажите нам о своих пожеланиях и мы обязательно найдем подходящее решение.</p>
+              </div>
+            </div>
+          </div>
+          <div class="faq__item">
+            <h3 class="faq__head">
+              <button class="faq__q" type="button" aria-expanded="false" aria-controls="faq-a-7" id="faq-q-7">
+                <span class="faq__num">07</span>
+                <span class="faq__label">Могу ли я предложить своих подрядчиков?</span>
+                <span class="faq__sign" aria-hidden="true"></span>
+              </button>
+            </h3>
+            <div class="faq__answer" id="faq-a-7" role="region" aria-labelledby="faq-q-7">
+              <div class="faq__answer-inner">
+                <p>Мы берём ответственность за тех подрядчиков, которых рекомендуем лично — тех, в ком уверены и с кем у нас выстроен надёжный рабочий контакт.</p>
+                <p>Если у вас уже есть специалист, с которым вы хотели бы работать — мы с уважением включим его в процесс: обсудим детали, согласуем документы и постараемся выстроить комфортное взаимодействие. Но важно понимать, что за качество его работы мы не сможем нести полную ответственность, так как изначально вы договаривались напрямую.</p>
+                <p>Если в процессе подготовки вам понравится чей-то стиль — обязательно поделитесь, мы с удовольствием ознакомимся, обсудим вместе и при необходимости организуем встречу.</p>
+                <p>Также просим вас не тратить время на самостоятельный поиск подрядчиков или площадок — за красивой картинкой могут скрываться нюансы, которые сложно заметить без опыта. Мы подберём для вас лучшие варианты в вашем бюджете и под вашу концепцию — внимательно, бережно и профессионально.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 14. Фото-лента №2 -->
+    <section id="photo-strip-2" class="section section--photo-strip">
+      <div class="photo-strip__track"></div>
+    </section>
+
+  </main>
+
+  <!-- 15. Футер — контакты и финальные титры -->
+  <footer id="contacts" class="site-footer">
+    <div class="container footer__grid">
+      <div class="footer__main">
+        <ul class="footer__contacts">
+          <li><span class="footer__label">Телефон:</span> <a href="tel:+79194459601">+7 (919) 445 96 01</a></li>
+          <li><span class="footer__label">Email:</span> <a href="mailto:stas.toropov2015@yandex.ru">stas.toropov2015@yandex.ru</a></li>
+        </ul>
+
+        <nav class="footer__nav" aria-label="Меню в футере">
+          <ul>
+            <li><a href="#top">ГЛАВНАЯ</a></li>
+            <li><a href="#about">О НАС</a></li>
+            <li><a href="#stages">УСЛУГИ</a></li>
+            <li><a href="#price">ЦЕНЫ</a></li>
+            <li><a href="#">КАРТА САЙТА</a></li>
+            <li><a href="#contacts">КОНТАКТЫ</a></li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="footer__side">
+        <div class="credits">
+          <div class="credits__roll">
+            <dl class="credits__list">
+              <div class="credits__row"><dt>ИП</dt><dd>Торопова Светлана Геннадьевна</dd></div>
+              <div class="credits__row"><dt>ИНН</dt><dd>182910651604</dd></div>
+              <div class="credits__row"><dt>Название банка</dt><dd>ООО «Банк Точка»</dd></div>
+              <div class="credits__row"><dt>БИК</dt><dd>044 525 104</dd></div>
+              <div class="credits__row"><dt>Расчётный счёт</dt><dd>4080 2810 2145 0000 1155</dd></div>
+              <div class="credits__row"><dt>Корсчёт</dt><dd>3010 1810 7453 7452 5104</dd></div>
+              <div class="credits__row"><dt>Город</dt><dd>Пермь</dd></div>
+            </dl>
+            <dl class="credits__list" aria-hidden="true">
+              <div class="credits__row"><dt>ИП</dt><dd>Торопова Светлана Геннадьевна</dd></div>
+              <div class="credits__row"><dt>ИНН</dt><dd>182910651604</dd></div>
+              <div class="credits__row"><dt>Название банка</dt><dd>ООО «Банк Точка»</dd></div>
+              <div class="credits__row"><dt>БИК</dt><dd>044 525 104</dd></div>
+              <div class="credits__row"><dt>Расчётный счёт</dt><dd>4080 2810 2145 0000 1155</dd></div>
+              <div class="credits__row"><dt>Корсчёт</dt><dd>3010 1810 7453 7452 5104</dd></div>
+              <div class="credits__row"><dt>Город</dt><dd>Пермь</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <a class="cta cta--lg" href="#" data-popup="write"><span class="cta__label">Написать нам</span><span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span></a>
+
+        <div class="footer__social">
+          <a href="https://t.me/stastoropov" target="_blank" rel="noopener">Телеграм</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container footer__bottom">
+      <p class="footer__copy">2016 © Все права защищены · <a href="http://help-wedding.ru/policy">Политика конфиденциальности</a></p>
+    </div>
+  </footer>
+
+  <!-- Попап-форма №2 «Написать нам» (docs/TZ.md, раздел «Попапы») -->
+  <div class="modal" id="writeModal" hidden>
+    <div class="modal__backdrop" data-modal-close></div>
+
+    <div class="modal__window panel-cut panel-cut--plain" tabindex="-1" role="dialog" aria-modal="true" aria-labelledby="writeTitle" aria-describedby="writeLead">
+      <button class="modal__close" type="button" data-modal-close aria-label="Закрыть форму">
+        <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 5l10 10M15 5L5 15"/></svg>
+      </button>
+
+      <figure class="modal__art" aria-hidden="true">
+        <img src="assets/sections/13-popup-form/04-popup-760.jpg"
+             srcset="assets/sections/13-popup-form/04-popup-420.jpg 420w, assets/sections/13-popup-form/04-popup-760.jpg 760w"
+             sizes="(max-width: 899px) 100vw, 38vw"
+             alt="" loading="lazy" width="760" height="915">
+        <figcaption class="modal__art-tag">Дубль 01</figcaption>
+      </figure>
+
+      <div class="modal__panel">
+        <p class="modal__eyebrow">Заявка</p>
+        <h2 class="modal__title" id="writeTitle">Оставьте заявку</h2>
+        <p class="modal__lead" id="writeLead">и мы начнём подготовку к вашей премьере</p>
+
+        <form class="mform" id="writeForm" novalidate>
+          <input type="hidden" name="consent_version" value="soglasie-v1-2026-09">
+          <input type="hidden" name="page" value="">
+          <input type="hidden" name="sent_at" value="">
+          <input type="hidden" name="form" value="Написать нам">
+
+          <!-- Ловушка для ботов: живой человек это поле не видит и не заполняет -->
+          <div class="mform__trap" aria-hidden="true">
+            <label for="w-company">Не заполняйте это поле</label>
+            <input id="w-company" name="company" type="text" tabindex="-1" autocomplete="off">
+          </div>
+
+          <div class="mfield">
+            <input class="mfield__input" id="w-name" name="name" type="text" placeholder=" " autocomplete="name" required aria-describedby="w-e-name">
+            <label class="mfield__label" for="w-name">Укажите ваше имя</label>
+            <span class="mfield__line" aria-hidden="true"></span>
+            <p class="mfield__error" id="w-e-name" hidden></p>
+          </div>
+
+          <div class="mfield">
+            <input class="mfield__input" id="w-phone" name="phone" type="tel" placeholder=" " inputmode="tel" autocomplete="tel" required aria-describedby="w-e-phone">
+            <label class="mfield__label" for="w-phone">Телефон</label>
+            <span class="mfield__line" aria-hidden="true"></span>
+            <p class="mfield__error" id="w-e-phone" hidden></p>
+          </div>
+
+          <div class="mfield mfield--filled">
+            <input class="mfield__input" id="w-date" name="date" type="date" placeholder=" " aria-describedby="w-e-date">
+            <label class="mfield__label" for="w-date">Дата премьеры <span class="mfield__opt">если уже выбрали</span></label>
+            <span class="mfield__line" aria-hidden="true"></span>
+            <p class="mfield__error" id="w-e-date" hidden></p>
+          </div>
+
+          <div class="mfield">
+            <textarea class="mfield__input mfield__input--area" id="w-note" name="note" rows="2" placeholder=" "></textarea>
+            <label class="mfield__label" for="w-note">Несколько слов о вашем проекте <span class="mfield__opt">необязательно</span></label>
+            <span class="mfield__line" aria-hidden="true"></span>
+          </div>
+
+          <label class="consent">
+            <input class="consent__box" type="checkbox" name="consent" id="w-consent" required>
+            <span>Я даю <a href="soglasie.html" target="_blank" rel="noopener">согласие на обработку персональных данных</a> и ознакомлен(а) с <a href="politika.html" target="_blank" rel="noopener">политикой конфиденциальности</a></span>
+          </label>
+          <p class="consent__hint" id="writeConsentHint">Отметьте согласие, чтобы отправить заявку</p>
+
+          <button class="cta cta--lg mform__submit" type="submit" disabled aria-describedby="writeConsentHint">
+            <span class="cta__label">Отправить</span>
+            <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span>
+          </button>
+
+          <p class="mform__fail" id="writeFail" role="alert" hidden></p>
+        </form>
+
+        <div class="mdone" id="writeDone" role="status" hidden>
+          <svg class="mdone__mark" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+            <circle class="mdone__ring" cx="32" cy="32" r="28"></circle>
+            <path class="mdone__check" d="M19 33.5 28.5 43 45 23"></path>
+          </svg>
+          <p class="mdone__title">Заявка отправлена</p>
+          <p class="mdone__text">Свяжемся с вами в ближайшее время</p>
+          <button class="mdone__close cta cta--lg" type="button" data-modal-close>
+            <span class="cta__label">Закрыть</span>
+            <span class="cta__arrow" aria-hidden="true"><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg><svg viewBox="0 0 12 12" focusable="false"><path d="M3 9 9 3M4.5 3H9v4.5"/></svg></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grain" aria-hidden="true"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/vendor/gsap.min.js"></script>
+  <script src="js/vendor/ScrollTrigger.min.js"></script>
+  <script src="js/vendor/lenis.min.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/motion.js"></script>
+  <script src="js/gallery.js"></script>
+  <script src="js/forms.js"></script>
+  <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Сколько стоит организация свадьбы?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Цена зависит от формата, задач и наполнения. Мы всегда честно объясняем, из чего складывается бюджет, и предлагаем лучшее — в рамках ваших возможностей. После первого созвона и анкеты мы сможем назвать ориентиры и подобрать идеальный формат."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "В чём разница между свадьбой в будний день и в выходной?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Свадьба в будний день — это отличная возможность сохранить желаемый уровень качества, при этом избежать ажиотажа. В такие даты проще забронировать популярные площадки и подрядчиков, с которыми хочется работать в первую очередь. Часто это позволяет немного оптимизировать бюджет. Что касается настроения и атмосферы — здесь всё в наших руках. Мы умеем создавать особенный день вне зависимости от дня недели: с теплом, эстетикой и вниманием к каждой детали."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Вы работаете по договору?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Обязательно. Это ваша гарантия спокойствия, а наша — ответственности. Всё официально, с прозрачными условиями."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "За сколько месяцев лучше начинать подготовку?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Идеальный срок для подготовки — 6−9 месяцев до свадьбы. Но если до вашего дня осталось меньше времени, не переживайте — мы с радостью подстроимся под любые сроки. Главное — начать общение и обсудить, как лучше организовать процесс, а остальное мы возьмём на себя."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Вы будете на площадке в день свадьбы?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Мы приезжаем раньше всех — и уезжаем, когда последний вопрос решён. С самого утра мы на площадке: координируем, следим за монтажом, расстановкой, таймингом. Чтобы вы были в моменте, а не в заботах."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Вы организовываете свадьбы только в Перми?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Нет, мы рады организовать свадьбу в любом городе мира, расскажите нам о своих пожеланиях и мы обязательно найдем подходящее решение."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Могу ли я предложить своих подрядчиков?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Мы берём ответственность за тех подрядчиков, которых рекомендуем лично — тех, в ком уверены и с кем у нас выстроен надёжный рабочий контакт. Если у вас уже есть специалист, с которым вы хотели бы работать — мы с уважением включим его в процесс: обсудим детали, согласуем документы и постараемся выстроить комфортное взаимодействие. Но важно понимать, что за качество его работы мы не сможем нести полную ответственность, так как изначально вы договаривались напрямую. Если в процессе подготовки вам понравится чей-то стиль — обязательно поделитесь, мы с удовольствием ознакомимся, обсудим вместе и при необходимости организуем встречу. Также просим вас не тратить время на самостоятельный поиск подрядчиков или площадок — за красивой картинкой могут скрываться нюансы, которые сложно заметить без опыта. Мы подберём для вас лучшие варианты в вашем бюджете и под вашу концепцию — внимательно, бережно и профессионально."
+      }
+    }
+  ]
+}
+  </script>
+
+  <script src="js/noselect.js"></script>
+
+</body>
+</html>
